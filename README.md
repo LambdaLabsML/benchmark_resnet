@@ -2,7 +2,6 @@
 
 ```
 ray job submit --address="http://ip-dashboard:8265" \
---entrypoint-num-gpus 1 \
 --runtime-env-json='{"working_dir": ".", "pip": ["torch", "torchvision"]}' \
 -- python benchmark_resnet_imagenet_ray.py \
 --batch-size 256 \
